@@ -1,12 +1,62 @@
-# React + Vite
+A modern React-based user dashboard that displays information about users fetched from a public API. This project was built with React 19 and Vite.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Features
 
-Currently, two official plugins are available:
+📋 Display user information in a clean, card-based layout
+🔍 Real-time search functionality that filters users by name, email, or phone
+📱 Fully responsive design that works on all screen sizes
+📄 Pagination support for easier navigation through large user lists
+🎨 Modern UI with smooth animations and hover effects
+🔄 Loading state and error handling for a better user experience
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Tech Stack
 
-## Expanding the ESLint configuration
+React (v19.0.0) - Frontend library
+Vite (v6.3.1) - Build tool and development server
+Bootstrap (v5.3.5) - CSS framework for styling
+React Bootstrap (v2.10.9) - React components for Bootstrap
+Axios (v1.9.0) - HTTP client for API requests
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Getting Started
+Prerequisites
+
+Node.js (v18.0.0 or higher recommended)
+npm or yarn package manager
+
+Installation
+
+Clone the repository:
+bashgit clone https://github.com/your-username/user-dashboard.git
+cd user-dashboard
+
+Install dependencies:
+bashnpm install
+# or
+yarn install
+
+Start the development server:
+bashnpm run dev
+# or
+yarn dev
+
+Open your browser and navigate to http://localhost:5173 (or the port shown in your terminal)
+
+Project Structure
+user-dashboard/
+├── public/             # Static assets
+├── src/
+│   ├── components/     # Reusable components
+│   │   ├── Dashboard.jsx     # Main dashboard component
+│   │   ├── Pagination.jsx    # Pagination component
+│   │   ├── SearchBar.jsx     # Search functionality
+│   │   └── UserCard.jsx      # User information card
+│   ├── App.jsx         # Root component
+│   ├── App.css         # Global styles
+│   └── main.jsx        # Entry point
+├── .eslintrc.json      # ESLint configuration
+├── index.html          # HTML template
+├── package.json        # Dependencies and scripts
+└── vite.config.js      # Vite configuration
+Usage
+The application fetches user data from the JSONPlaceholder API (https://jsonplaceholder.typicode.com/users) and displays it in a card format.
+
